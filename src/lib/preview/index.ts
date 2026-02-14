@@ -16,23 +16,23 @@ export type PreviewData = {
 
 type EmailListProps = {
 	path?: string;
-	root?: string;
+	files: string[];
 };
 
 /**
  * Get a list of all email component files.
- * Hardcoded for edge runtime compatibility (no fs/path).
+ * Edge-compatible: the consumer passes in the file list directly.
+ *
+ * @param options.files - Array of email component names (without .svelte extension)
+ * @param options.path - Import path prefix for the email components (default: '/src/lib/emails')
  */
 export const emailList = ({
+	files,
 	path: emailPath = '/src/lib/emails'
-}: EmailListProps = {}): PreviewData => {
-	const files = [
-		'demo-email',
-		'examples/apple-receipt',
-		'examples/vercel-invite-user',
-		'shadcn-demo'
-	];
-
+}: EmailListProps): PreviewData => {
+	if (!files.length) {
+		return { files: null, path: emailPath };
+	}
 	return { files, path: emailPath };
 };
 
