@@ -1,7 +1,7 @@
 {
 	"name": "better-svelte-email-edge",
 	"description": "Svelte email renderer with Tailwind support",
-	"version": "1.4.0",
+	"version": "1.4.1",
 	"author": "Konixy",
 	"repository": {
 		"type": "git",
