@@ -1,11 +1,11 @@
 {
-	"name": "better-svelte-email",
+	"name": "better-svelte-email-edge",
 	"description": "Svelte email renderer with Tailwind support",
 	"version": "1.4.0",
 	"author": "Konixy",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Konixy/better-svelte-email.git"
+		"url": "git+https://github.com/TheBitmonkey/better-svelte-email-edge.git"
 	},
 	"homepage": "https://better-svelte-email.konixy.fr",
 	"peerDependencies": {
