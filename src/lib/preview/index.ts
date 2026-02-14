@@ -1,7 +1,7 @@
 import type { RequestEvent } from '@sveltejs/kit';
 import { Resend } from 'resend';
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
 import prettier from 'prettier/standalone';
 import parserHtml from 'prettier/parser-html';
 import Renderer from '$lib/render/index.js';
